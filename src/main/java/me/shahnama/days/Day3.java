@@ -8,12 +8,15 @@ import java.util.List;
 
 public class Day3 {
 
-    public Day3(){
+    private final String PUZZLE_INPUT;
+    private List<String> puzzleInput;
+
+    public Day3(String PUZZLE_INPUT){
+        this.PUZZLE_INPUT = PUZZLE_INPUT;
         readInput();
     }
 
-    private static final String PUZZLE_INPUT = "day3.txt" ;
-    private List<String> puzzleInput;
+
 
     private void readInput(){
         puzzleInput = new Tools().readInput(PUZZLE_INPUT);

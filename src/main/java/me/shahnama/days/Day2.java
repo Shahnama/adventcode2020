@@ -6,10 +6,11 @@ import java.util.List;
 
 public class Day2 {
 
-    private static final String PUZZLE_INPUT = "day2.txt" ;
+    private final String PUZZLE_INPUT ;
     private List<String> puzzleInput;
 
-    public Day2(){
+    public Day2(String PUZZLE_INPUT){
+        this.PUZZLE_INPUT = PUZZLE_INPUT;
         readInput();
     }
 

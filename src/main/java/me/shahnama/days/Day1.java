@@ -9,15 +9,17 @@ import java.util.List;
 
 public class Day1 {
 
-    public Day1(){
-        readInput();
-    }
+    private final String PUZZLE_INPUT; ;
 
     private static final int SUM = 0;
     private static final int MULTIPLICATION = 1;
     private static final int TARGET_YEAR = 2020;
-    private static final String PUZZLE_INPUT = "day1.txt" ;
     private List<Integer> puzzleInput;
+
+    public Day1(String PUZZLE_INPUT ){
+        this. PUZZLE_INPUT = PUZZLE_INPUT ;
+        readInput();
+    }
 
     private void readInput(){
         puzzleInput = new ArrayList<>();

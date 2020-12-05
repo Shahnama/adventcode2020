@@ -8,14 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Day5 {
+    private final String PUZZLE_INPUT;
+    private List<String> puzzleInput;
+    private final List<Seat> seatList = new ArrayList<>();
 
-    public Day5(){
+    public Day5(String PUZZLE_INPUT){
+        this.PUZZLE_INPUT = PUZZLE_INPUT;
         readInput();
     }
 
-    private static final String PUZZLE_INPUT = "day5.txt" ;
-    private List<String> puzzleInput;
-    private final List<Seat> seatList = new ArrayList<>();
+
 
 
     private void readInput(){

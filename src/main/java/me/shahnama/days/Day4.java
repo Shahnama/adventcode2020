@@ -9,12 +9,13 @@ import java.util.List;
 
 public class Day4 {
 
-    public Day4(){
+    private final String PUZZLE_INPUT ;
+    private final List<String> passportDataList = new ArrayList<>();
+
+    public Day4(String PUZZLE_INPUT){
+        this.PUZZLE_INPUT = PUZZLE_INPUT;
         readInput();
     }
-
-    private static final String PUZZLE_INPUT = "day4.txt" ;
-    private final List<String> passportDataList = new ArrayList<>();
 
     private void readInput(){
         List<String> rawPuzzleInput = new Tools().readInput(PUZZLE_INPUT);
