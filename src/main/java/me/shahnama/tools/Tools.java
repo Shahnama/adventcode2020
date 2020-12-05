@@ -13,7 +13,6 @@ public class Tools {
     public List<String> readInput(String fileName){
         List<String> puzzleInput = new ArrayList<String>();
         try {
-            System.out.println(this.getClass().getResourceAsStream("/puzzleInput/" + fileName));
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(
                     this.getClass().getResourceAsStream("/puzzleInput/" + fileName), "UTF-8"));
             String line = null;
