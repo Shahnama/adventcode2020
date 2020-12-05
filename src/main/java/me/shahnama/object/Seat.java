@@ -1,9 +1,9 @@
 package me.shahnama.object;
 
 public class Seat {
-    public int row;
-    public int column;
-    public String seatID;
+    public final int row;
+    public final int column;
+    public final String seatID;
 
     public Seat(    int row, int column, String seatID ) {
         this. row = row ;

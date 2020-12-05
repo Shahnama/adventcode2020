@@ -83,14 +83,9 @@ public class Day3 {
         List<String> expandPuzzleInput = new ArrayList<>();
 
         for(String inputLine: puzzleInput){
-            String line="";
-            for(int i=0 ; i<repeatLine;i++){
-                line+=inputLine;
-            }
-            expandPuzzleInput.add(line);
+            expandPuzzleInput.add(String.valueOf(inputLine).repeat(Math.max(0, repeatLine)));
         }
         puzzleInput =expandPuzzleInput;
     }
-
 }
 

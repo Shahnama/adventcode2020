@@ -26,22 +26,18 @@ public class Day2 {
             char Character=pattern[1].replace(":", "").toCharArray()[0];
             String password= pattern[2];
 
-            int min = Integer.valueOf(min_max[0]);
-            int max= Integer.valueOf(min_max[1]);
+            int min = Integer.parseInt(min_max[0]);
+            int max= Integer.parseInt(min_max[1]);
             char[] chars = password.toCharArray();
 
             int counter=0;
-            boolean valid =false;
-
             for(char c : chars)
             {
                 if(c==Character){
                     counter++;
                 }
             }
-
             if(counter>=min && counter<=max){
-                valid=true;
                 validCounter++;
             }
         }
@@ -55,23 +51,16 @@ public class Day2 {
             String[] first_second =pattern[0].split("-");
             char Character=pattern[1].replace(":", "").toCharArray()[0];
             String password= pattern[2];
-
             int first = Integer.parseInt(first_second[0]);
             int second= Integer.parseInt(first_second[1]);
-
-            int counter=0;
-
-            boolean valid =false;
             char c1= password.charAt(first-1);
             char c2= password.charAt(second-1);
 
             if((c1 == Character) ^ (c2 ==Character)){
-                valid=true;
                 validCounter++;
             }
         }
         return validCounter;
     }
-
 }
 

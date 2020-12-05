@@ -14,21 +14,19 @@ public class Day4 {
     }
 
     private static final String PUZZLE_INPUT = "day4.txt" ;
-    private List<String> puzzleInput;
-    private List<String> passportDataList = new ArrayList<>();
-
+    private final List<String> passportDataList = new ArrayList<>();
 
     private void readInput(){
         List<String> rawPuzzleInput = new Tools().readInput(PUZZLE_INPUT);
-        String passportData = "";
+        StringBuilder passportData = new StringBuilder();
         for(String rawData : rawPuzzleInput){
             if(rawData.equals("")){
-                passportDataList.add(passportData);
-                passportData = "";
+                passportDataList.add(passportData.toString());
+                passportData = new StringBuilder();
             }
-            passportData += (" " + rawData);
+            passportData.append(" ").append(rawData);
         }
-        passportDataList.add(passportData);
+        passportDataList.add(passportData.toString());
     }
 
     public int solve_P1(){
@@ -39,7 +37,6 @@ public class Day4 {
             if(passport.hasAllFields()){
                 count++;
             }
-//                System.out.println(passport.isValid() + "  " + passwordData);
         }
         return count;
     }
