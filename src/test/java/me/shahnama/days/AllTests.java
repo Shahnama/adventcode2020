@@ -25,7 +25,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day2_P1() throws AnswerNotFindException {
+    void solve_Day2_P1() {
         int expectedAnswer = 2;
         assertEquals(expectedAnswer, new Day2("test2.txt").solve_P1());
 
@@ -34,7 +34,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day2_P2() throws AnswerNotFindException {
+    void solve_Day2_P2() {
         int expectedAnswer = 1;
         assertEquals(expectedAnswer, new Day2("test2.txt").solve_P2());
 
@@ -43,7 +43,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day3_P1() throws AnswerNotFindException {
+    void solve_Day3_P1() {
         int expectedAnswer = 7;
         assertEquals(expectedAnswer, new Day3("test3.txt").solve_P1());
 
@@ -52,7 +52,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day3_P2() throws AnswerNotFindException {
+    void solve_Day3_P2() {
         long expectedAnswer = 336;
         assertEquals(expectedAnswer, new Day3("test3.txt").solve_P2());
 
@@ -61,7 +61,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day4_P1() throws AnswerNotFindException {
+    void solve_Day4_P1() {
         int expectedAnswer = 2;
         assertEquals(expectedAnswer, new Day4("test4.txt").solve_P1());
 
@@ -70,7 +70,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day4_P2() throws AnswerNotFindException {
+    void solve_Day4_P2() {
         long expectedAnswer = 4;
         assertEquals(expectedAnswer, new Day4("test4_p2.txt").solve_P2());
 
@@ -79,7 +79,7 @@ class AllTests {
     }
 
     @org.junit.jupiter.api.Test
-    void solve_Day5_P1() throws AnswerNotFindException {
+    void solve_Day5_P1() {
         int expectedAnswer = 820;
         assertEquals(expectedAnswer, new Day5("test5.txt").solve_P1());
 
@@ -94,5 +94,24 @@ class AllTests {
 
         int expectedAnswer = 653;
         assertEquals(expectedAnswer, new Day5("day5.txt").solve_P2());
+    }
+
+    @org.junit.jupiter.api.Test
+    void solve_Day6_P1() {
+        int expectedAnswer = 11;
+        assertEquals(expectedAnswer, new Day6("test6.txt").solve_P1());
+
+        expectedAnswer = 6534;
+        assertEquals(expectedAnswer, new Day6("day6.txt").solve_P1());
+    }
+
+    @org.junit.jupiter.api.Test
+    void solve_Day6_P2() {
+
+        int expectedAnswer = 6;
+        assertEquals(expectedAnswer, new Day6("test6.txt").solve_P2());
+
+        expectedAnswer = 3402;
+        assertEquals(expectedAnswer, new Day6("day6.txt").solve_P2());
     }
 }

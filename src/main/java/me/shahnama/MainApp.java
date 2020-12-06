@@ -20,5 +20,11 @@ public class MainApp {
 
         System.out.printf("Day 5 Part 1, Answer: %s%n",new Day5("day5.txt").solve_P1());
         System.out.printf("Day 5 Part 2, Answer: %s%n",new Day5("day5.txt").solve_P2());
+
+        System.out.printf("Day 6 Part 1 (test), Answer: %s%n",new Day6("test6.txt").solve_P1());
+        System.out.printf("Day 6 Part 2 (test), Answer: %s%n",new Day6("test6.txt").solve_P2());
+
+        System.out.printf("Day 6 Part 1, Answer: %s%n",new Day6("day6.txt").solve_P1());
+        System.out.printf("Day 6 Part 2, Answer: %s%n",new Day6("day6.txt").solve_P2());
     }
 }

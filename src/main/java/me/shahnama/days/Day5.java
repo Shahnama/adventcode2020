@@ -17,9 +17,6 @@ public class Day5 {
         readInput();
     }
 
-
-
-
     private void readInput(){
         puzzleInput = new Tools().readInput(PUZZLE_INPUT);
     }
@@ -93,6 +90,6 @@ public class Day5 {
                 return mySeat;
             }
         }
-        throw new AnswerNotFindException("Unexpected orientation");
+        throw new AnswerNotFindException("Unexpected condition");
     }
 }
