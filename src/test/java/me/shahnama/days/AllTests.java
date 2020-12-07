@@ -114,4 +114,26 @@ class AllTests {
         expectedAnswer = 3402;
         assertEquals(expectedAnswer, new Day6("day6.txt").solve_P2());
     }
+    @org.junit.jupiter.api.Test
+    void solve_Day7_P1() {
+
+        int expectedAnswer = 4;
+        assertEquals(expectedAnswer, new Day7("test7.txt").solve_P1());
+
+        expectedAnswer = 192;
+        assertEquals(expectedAnswer, new Day7("day7.txt").solve_P1());
+    }
+
+    @org.junit.jupiter.api.Test
+    void solve_Day7_P2() {
+
+        int expectedAnswer = 32;
+        assertEquals(expectedAnswer, new Day7("test7.txt").solve_P2());
+
+        expectedAnswer = 126;
+        assertEquals(expectedAnswer, new Day7("test7_2.txt").solve_P2());
+
+        expectedAnswer = 12128;
+        assertEquals(expectedAnswer, new Day7("day7.txt").solve_P2());
+    }
 }

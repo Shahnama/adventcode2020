@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Day1 {
 
-    private final String PUZZLE_INPUT; ;
+    private final String PUZZLE_INPUT;
 
     private static final int SUM = 0;
     private static final int MULTIPLICATION = 1;
