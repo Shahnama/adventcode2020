@@ -47,56 +47,31 @@ public class Day9 {
         long largestNumber = Collections.min(contiguousSet);
 
         return smallestNumber+largestNumber;
-//        return -1L;
-
     }
 
     private List<Long> getContiguousSet(long invalidNumber ) {
         int indexOfInvalidNumber = puzzleInput.indexOf(invalidNumber);
-        System.out.println(indexOfInvalidNumber);
         List<Long> contiguousSet = new ArrayList<>();
         if (invalidNumber == -1L) {
             return contiguousSet;
         }
-        int i = -1;
-        int j = -1;
-        int k = -1;
 
-        for (i = 0; i < indexOfInvalidNumber; i++) {
+
+        for (int i = 0; i < indexOfInvalidNumber; i++) {
             contiguousSet.clear();
             long sum = puzzleInput.get(i);
             contiguousSet.add(puzzleInput.get(i));
-            System.out.printf("\n%s,", puzzleInput.get(i));
-            for (j = i + 1; j < indexOfInvalidNumber; j++) {
-                System.out.printf("%s,", puzzleInput.get(j));
+            for (int j = i + 1; j < indexOfInvalidNumber; j++) {
                 contiguousSet.add(puzzleInput.get(j));
                 sum += puzzleInput.get(j);
                 if(sum == invalidNumber){
-                    System.out.println();
                     return contiguousSet;
                 }
 
             }
         }
-        System.out.println();
-
-        System.out.printf("%s,%s,%s\n", puzzleInput.get(i), puzzleInput.get(j), puzzleInput.get(k));
-
         return contiguousSet;
     }
-
-    private int numberHandler(int operation , int ... inputIndexList){
-        int result = operation;
-        for(int index : inputIndexList){
-            if(operation==SUM) {
-                result += puzzleInput.get(index);
-            }else if(operation==MULTIPLICATION){
-                result *= puzzleInput.get(index);
-            }
-        }
-        return result;
-    }
-
 
     private Long getInvalidNumber(){
         for(int index=preambleLength;index<puzzleInput.size();index++){
@@ -109,10 +84,8 @@ public class Day9 {
     }
 
     private boolean isSumOfPreambleList(long data){
-//        System.out.println("preambleList size: "+preambleList);
         for(int i=0;i<preambleList.size();i++){
             for(int j=i+1;j<preambleList.size();j++){
-//                System.out.printf("%s %s+%s=%s\n",data,preambleList.get(i),preambleList.get(j),preambleList.get(i)+preambleList.get(j));
                 if(preambleList.get(i)+preambleList.get(j)==data){
                     return true;
                 }

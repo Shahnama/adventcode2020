@@ -156,4 +156,24 @@ class AllTests {
         expectedAnswer = 761;
         assertEquals(expectedAnswer, new Day8("day8.txt").solve_P2());
     }
+
+    @org.junit.jupiter.api.Test
+    void solve_Day9_P1() throws AnswerNotFindException {
+
+        int expectedAnswer = 127;
+        assertEquals(expectedAnswer, new Day9("test9.txt",5).solve_P1());
+
+        expectedAnswer = 69316178;
+        assertEquals(expectedAnswer, new Day9("day9.txt",25).solve_P1());
+    }
+
+    @org.junit.jupiter.api.Test
+    void solve_Day9_P2() throws AnswerNotFindException {
+
+        int expectedAnswer = 62;
+        assertEquals(expectedAnswer, new Day9("test9.txt",5).solve_P2());
+
+        expectedAnswer = 9351526;
+        assertEquals(expectedAnswer, new Day9("day9.txt",25).solve_P2());
+    }
 }
