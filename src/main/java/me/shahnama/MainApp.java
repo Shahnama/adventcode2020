@@ -1,12 +1,11 @@
 package me.shahnama;
 
-import me.shahnama.days.Day10;
+import me.shahnama.days.*;
 import me.shahnama.tools.AnswerNotFindException;
 
 public class MainApp {
     public static void main(String[] args) throws AnswerNotFindException {
 
-        /*
         System.out.printf("Day 1 Part 1, Answer: %s%n", new Day1("day1.txt").solve_P1());
         System.out.printf("Day 1 Part 2, Answer: %s%n", new Day1("day1.txt").solve_P2());
 
@@ -44,11 +43,8 @@ public class MainApp {
         System.out.printf("Day 9 Part 1 (test), Answer: %s%n", new Day9("test9.txt", 5).solve_P1());
         System.out.printf("Day 9 Part 2 (test), Answer: %s%n", new Day9("test9.txt", 5).solve_P2());
 
-
         System.out.printf("Day 9 Part 1, Answer: %s%n", new Day9("day9.txt", 25).solve_P1());
         System.out.printf("Day 9 Part 2, Answer: %s%n", new Day9("day9.txt", 25).solve_P2());
-
-*/
 
         System.out.printf("Day 10 Part 1 (test_1), Answer: %s%n", new Day10("test10_1.txt").solve_P1());
         System.out.printf("Day 10 Part 1 (test_2), Answer: %s%n", new Day10("test10_2.txt").solve_P1());
