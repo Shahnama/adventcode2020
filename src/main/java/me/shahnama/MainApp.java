@@ -50,10 +50,10 @@ public class MainApp {
 
 */
 
-//        System.out.printf("Day 10 Part 1 (test_1), Answer: %s%n", new Day10("test10_1.txt").solve_P1());
-//        System.out.printf("Day 10 Part 1 (test_2), Answer: %s%n", new Day10("test10_2.txt").solve_P1());
-//
-//        System.out.printf("Day 10 Part 1, Answer: %s%n", new Day10("day10.txt").solve_P1());
+        System.out.printf("Day 10 Part 1 (test_1), Answer: %s%n", new Day10("test10_1.txt").solve_P1());
+        System.out.printf("Day 10 Part 1 (test_2), Answer: %s%n", new Day10("test10_2.txt").solve_P1());
+
+        System.out.printf("Day 10 Part 1, Answer: %s%n", new Day10("day10.txt").solve_P1());
 
         System.out.printf("Day 10 Part 2 (test_1), Answer: %s%n", new Day10("test10_1.txt").solve_P2());
         System.out.printf("Day 10 Part 2 (test_2), Answer: %s%n", new Day10("test10_2.txt").solve_P2());
